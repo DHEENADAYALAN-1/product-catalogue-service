@@ -1,0 +1,20 @@
+{
+  "name": "product-catalogue-service",
+  "version": "2.0.0",
+  "description": "Product catalogue microservice - DevOps containerization & K8s assignment",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "node tests/test.js"
+  },
+  "author": "Dheenadayalan N",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.19.2",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
