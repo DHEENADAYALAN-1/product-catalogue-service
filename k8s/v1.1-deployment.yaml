@@ -1,6 +1,5 @@
 # k8s/v1.1-deployment.yaml
 # Version 1.1.0 - deployed in the "product-v1-1" namespace
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -23,7 +22,8 @@ spec:
     spec:
       containers:
         - name: product-catalogue
-          image: DOCKERHUB_USERNAME/product-catalogue-service:v1.1.0
+          image: product-catalogue-service:v1.1.0
+          imagePullPolicy: Never
           ports:
             - containerPort: 4000
           env:
